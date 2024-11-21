@@ -22,3 +22,9 @@ while choice.upper() != 'D':
          countRec()
     elif choice.upper() == 'E':
         print("Thank you!")
+
+def viewRec():
+    file = open(filename, 'r')
+    with open(filename, 'r') as read_file:
+        print(read_file.read())
+        read_file.close()
