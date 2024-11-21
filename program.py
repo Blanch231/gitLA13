@@ -19,6 +19,12 @@ while choice.upper() != 'D':
         clearRec()
     elif choice.upper() == 'D':
         print("Count All Records")
-         countRec()
+        countRec()
     elif choice.upper() == 'E':
         print("Thank you!")
+
+#alwynn cabigon
+def countRec():
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+        print(f"Total records: {len(lines)}")
