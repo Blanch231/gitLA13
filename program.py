@@ -22,3 +22,8 @@ while choice.upper() != 'D':
          countRec()
     elif choice.upper() == 'E':
         print("Thank you!")
+
+def clearRec():
+    file = open(filename, 'w')
+    file.write("")
+    file.close()
